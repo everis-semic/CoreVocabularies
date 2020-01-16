@@ -1,1 +1,1 @@
-# coreVocabularies
+# CoreVocabularies

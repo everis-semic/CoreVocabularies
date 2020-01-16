@@ -20,7 +20,7 @@
       <xsd:complexContent>
          <xsd:extension base="cac:AssetType">
              <xsd:sequence>
-                <xsd:element ref="ac:Criterion" minOccurs="1" maxOccurs="unbounded"/>
+                <xsd:element ref="ac:Criterion" minOccurs="0" maxOccurs="unbounded"/>
                 <xsd:element ref="ac:Evidence" minOccurs="0" maxOccurs="unbounded"/>
                 <xsd:element ref="ac:EvidenceType" minOccurs="0" maxOccurs="unbounded"/>
                 <xsd:element ref="cac:NaturalPerson" minOccurs="0" maxOccurs="unbounded"/>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="https://github.com/everis-semic/common/3.0.0/xml/CommonBasicComponents#"
+   xmlns:dt="https://github.com/everis-semic/common/3.0.0/xml/DataTypes#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   targetNamespace="https://github.com/everis-semic/common/3.0.0/xml/CommonBasicComponents#"
+   elementFormDefault="qualified"
+   attributeFormDefault="unqualified"
+   version="3.0.0">
+   <!-- ===== Imports ===== -->
+   <xsd:import namespace="https://github.com/everis-semic/common/3.0.0/xml/DataTypes#" schemaLocation="./DataTypes.xsd"/>
+   
+   <!-- ==== Element Declaration ==== -->
+   <xsd:element name="ID" type="IDType"/>
+   <xsd:element name="CreatorIdRef" type="IDType"/>
+   <xsd:element name="PublisherIdRef" type="IDType"/>
+   <xsd:element name="ProviderIdRef" type="IDType"/>
+   <xsd:element name="AuthoritativeSourceIdRef" type="IDType"/>
+   <xsd:element name="Bias" type="BiasType"/>
+   <xsd:element name="Description" type="DescriptionType"/>
+   <xsd:element name="DurationMeasure" type="DurationMeasureType"/>
+   <xsd:element name="DescriptionCode" type="DescriptionCodeType"/>
+   <xsd:element name="EndDate" type="EndDateType"/>
+   <xsd:element name="EndTime" type="EndTimeType"/>
+   <xsd:element name="SourceCriterionIdRef" type="ReferenceIDType"/>
+   <xsd:element name="TargetCriterionIdRef" type="ReferenceIDType"/>
+   <xsd:element name="EvaluationMethod" type="EvaluationMethodType"/>
+   <xsd:element name="FromReferenceFrameWorkIdRef" type="ReferenceIDType"/>
+   <xsd:element name="Modified" type="dt:DateTimeType"/>
+   <xsd:element name="Issued" type="dt:DateTimeType"/>
+   <xsd:element name="Name" type="NameType"/>
+   <xsd:element name="MatchingEvidenceTypeIdRef" type="ReferenceIDType"/>
+   <xsd:element name="ProvidedEvidenceIdRef" type="ReferenceIDType"/>
+   <xsd:element name="RequiredEvidenceTypeIdRef" type="ReferenceIDType"/>		
+   <xsd:element name="StartDate" type="StartDateType"/>
+   <xsd:element name="StartTime" type="StartTimeType"/>
+   <xsd:element name="Title" type="TextType"/>
+   <xsd:element name="Type" type="TypeType"/>
+   <xsd:element name="VersionInfo" type="TextType"/>
+   <xsd:element name="Weight" type="WeightType"/>
+   <xsd:element name="WeightingDescription" type="DescriptionType"/>
+   <xsd:element name="FullName" type="NameType"/>
+   <xsd:element name="FamilyName" type="NameType"/>
+   <xsd:element name="GivenName" type="NameType"/>
+   <xsd:element name="BirthName" type="NameType"/>
+   <xsd:element name="Gender" type="dt:CodeType"/>
+   <!-- ===== Entity Type Definitions ===== -->
+   <xsd:complexType name="BiasType">
+      <xsd:simpleContent>
+         <xsd:extension base="dt:NumericType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="DateTimeType">
+      <xsd:simpleContent>
+         <xsd:extension base="dt:DateTimeType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="DescriptionType">
+      <xsd:simpleContent>
+         <xsd:restriction base="dt:TextType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="DescriptionCodeType">
+      <xsd:simpleContent>
+         <xsd:restriction base="dt:CodeType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="DurationMeasureType">
+      <xsd:simpleContent>
+         <xsd:restriction base="dt:MeasureType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="EndDateType">
+      <xsd:simpleContent>
+         <xsd:restriction base="dt:DateType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="EndTimeType">
+      <xsd:simpleContent>
+         <xsd:restriction base="dt:TimeType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="EvaluationMethodType">
+      <xsd:simpleContent>
+         <xsd:restriction base="dt:CodeType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="IDType">
+      <xsd:simpleContent>
+         <xsd:restriction base="dt:IdentifierType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="NameType">
+      <xsd:simpleContent>
+         <xsd:restriction base="dt:TextType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="NumericType">
+      <xsd:simpleContent>
+         <xsd:restriction base="dt:NumericType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="StartDateType">
+      <xsd:simpleContent>
+         <xsd:restriction base="dt:DateType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="ReferenceIDType">
+      <xsd:simpleContent>
+         <xsd:restriction base="dt:IdentifierType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="StartTimeType">
+      <xsd:simpleContent>
+         <xsd:restriction base="dt:TimeType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="TextType">
+      <xsd:simpleContent>
+         <xsd:extension base="dt:TextType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="TypeType">
+      <xsd:simpleContent>
+         <xsd:extension base="dt:CodeType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="URIType">
+      <xsd:simpleContent>
+         <xsd:restriction base="dt:IdentifierType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>   
+   <xsd:complexType name="WeightType">
+      <xsd:simpleContent>
+         <xsd:extension base="dt:NumericType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+</xsd:schema>   
+
