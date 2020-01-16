@@ -9,6 +9,7 @@
 	attributeFormDefault="unqualified" version="3.0.0">
 	<xsd:import namespace="https://github.com/everis-semic/common/3.0.0/xml/CommonAggregateComponents#" schemaLocation="../../../common/3.0.0/xml/CommonAggregateComponents.xsd"/>
 	<xsd:import namespace="https://github.com/everis-semic/common/3.0.0/xml/CommonBasicComponents#" schemaLocation="../../../common/3.0.0/xml/CommonBasicComponents.xsd"/>
+	
 	<!-- Element declaration -->
 	<xsd:element name="Criterion" type="CriterionType"/>
 	<xsd:element name="CriterionConstraintProperty" type="PropertyType"/>
@@ -29,7 +30,7 @@
 			<xsd:element ref="cbc:Type" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="cbc:Name" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="cbc:Description" minOccurs="0" maxOccurs="unbounded"/>
-			<xsd:element ref="cbc:WeightingDescription" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="cbc:WeightingConsiderationDescription" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="cbc:Weight" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="cbc:EvaluationMethod" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="cbc:Bias" minOccurs="0" maxOccurs="unbounded"/>			
