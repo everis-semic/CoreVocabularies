@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cr:CriterionApplicationResponse xmlns:dt="https://github.com/everis-semic/common/3.0.0/xml/DataTypes#"
+<cr:CriterionApplicationResponse xmlns:dt="https://github.com/everis-semic/common/2.0.0/xml/DataTypes#"
  xmlns:ccts="urn:un:unece:uncefact:documentation:2"
  xmlns:cct="urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2"
- xmlns:cbc="https://github.com/everis-semic/common/3.0.0/xml/CommonBasicComponents#"
- xmlns:ac="https://github.com/everis-semic/cccev/3.0.0/xml/CCCEV-AggregateComponents#"
- xmlns:cac="https://github.com/everis-semic/common/3.0.0/xml/CommonAggregateComponents#"
- xmlns:cr="https://github.com/everis-semic/cccev/3.0.0/xml/CriterionApplicationResponse#"
+ xmlns:cbc="https://github.com/everis-semic/common/2.0.0/xml/CommonBasicComponents#"
+ xmlns:ac="https://github.com/everis-semic/cccev/2.0.0/xml/CCCEV-AggregateComponents#"
+ xmlns:cac="https://github.com/everis-semic/common/2.0.0/xml/CommonAggregateComponents#"
+ xmlns:cr="https://github.com/everis-semic/cccev/2.0.0/xml/CriterionApplicationResponse#"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="https://github.com/everis-semic/cccev/3.0.0/xml/CriterionApplicationResponse# file:/C:/Users/estaromi/everis/SEMIC%20-%20General/03%20GitHub/CoreVocabularies/cccev/3.0.0/xml/CriterionApplicationResponse.xsd">
+ xsi:schemaLocation="https://github.com/everis-semic/cccev/2.0.0/xml/CriterionApplicationResponse# file:/C:/Users/estaromi/everis/SEMIC%20-%20General/03%20GitHub/CoreVocabularies/cccev/2.0.0/xml/CriterionApplicationResponse.xsd">
     <cbc:ID schemeID="schemeID0" schemeName="schemeName0" schemeAgencyID="schemeAgencyID0" schemeAgencyName="schemeAgencyName0"
          schemeVersionID="schemeVersionID0" schemeDataURI="http://www.oxygenxml.com/" schemeURI="http://www.oxygenxml.com/">ID0</cbc:ID>
     <cbc:ID schemeID="schemeID1" schemeName="schemeName1" schemeAgencyID="schemeAgencyID1" schemeAgencyName="schemeAgencyName1"

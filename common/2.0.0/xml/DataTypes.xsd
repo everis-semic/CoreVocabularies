@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns="https://github.com/everis-semic/common/3.0.0/xml/DataTypes#"
+<xsd:schema xmlns="https://github.com/everis-semic/common/2.0.0/xml/DataTypes#"
    xmlns:ccts="urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2"
    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-   targetNamespace="https://github.com/everis-semic/common/3.0.0/xml/DataTypes#"
+   targetNamespace="https://github.com/everis-semic/common/2.0.0/xml/DataTypes#"
    elementFormDefault="qualified"
    attributeFormDefault="unqualified"
-   version="3.0.0">
+   version="2.0.0">
 
    <!-- ===== Imports ===== -->
   <xsd:import schemaLocation="CCTS_CCT_SchemaModule-2.3.xsd"

@@ -6,13 +6,13 @@
     xmlns:ubl-qares="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2" 
     xmlns:ubl-qareq="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    xmlns:cccev="https://github.com/everis-semic/cccev/3.0.0/xml/CCCEV-AggregateComponents#"
-    xmlns:cccev-cbc="https://github.com/everis-semic/common/3.0.0/xml/CommonBasicComponents#">
+    xmlns:cccev="https://github.com/everis-semic/cccev/2.0.0/xml/CCCEV-AggregateComponents#"
+    xmlns:cccev-cbc="https://github.com/everis-semic/common/2.0.0/xml/CommonBasicComponents#">
     <ext:UBLExtensions>
         <ext:UBLExtension>
             <cbc:Name>Evidence Type</cbc:Name>
             <ext:ExtensionAgencyID>ISA2-SEMIC</ext:ExtensionAgencyID>
-            <ext:ExtensionVersionID>CCCEV-3.0.0</ext:ExtensionVersionID>
+            <ext:ExtensionVersionID>CCCEV-2.0.0</ext:ExtensionVersionID>
             <ext:ExtensionReason>Definition of an Evidence Type: UBL2.3 does not model types of evidences, but just actual instances of evidences.</ext:ExtensionReason>
             <ext:ExtensionContent>
                 <xsd:any>
@@ -177,7 +177,7 @@
             <ext:UBLExtension>
                 <cbc:Name>TOOP UC6 - Equivalence of cross-border criterions</cbc:Name>
                 <ext:ExtensionAgencyID>ISA2-SEMIC</ext:ExtensionAgencyID>
-                <ext:ExtensionVersionID>CCCEV-3.0.0</ext:ExtensionVersionID>
+                <ext:ExtensionVersionID>CCCEV-2.0.0</ext:ExtensionVersionID>
                 <ext:ExtensionReason>The UBL2.3 TenderingCriterion does not refer to other [equivalent] source of target criteria, just to sub-criteria.</ext:ExtensionReason>
                 <ext:ExtensionContent>
                     <xsd:any>
@@ -1041,7 +1041,7 @@
             <ext:UBLExtension>
                 <cbc:Name>Maching Evidence Type</cbc:Name>
                 <ext:ExtensionAgencyID>ISA2-SEMIC</ext:ExtensionAgencyID>
-                <ext:ExtensionVersionID>CCCEV-3.0.0</ext:ExtensionVersionID>
+                <ext:ExtensionVersionID>CCCEV-2.0.0</ext:ExtensionVersionID>
                 <ext:ExtensionReason>UBL2.3 does not model types of evidences, but just actual instances of evidences.</ext:ExtensionReason>
                 <ext:ExtensionContent>
                     <xsd:any>
