@@ -13,8 +13,6 @@
 	
 	<!-- Element declaration -->
 	<xsd:element name="Person" type="PersonType"/>
-	<!-- <xsd:element name="PlaceOfBirth" type=":Location"/> -->
-	
 
 	<!-- Element definition -->
 	<xsd:complexType name="PersonType">
@@ -22,12 +20,12 @@
 			<xsd:element ref="cbc:FullName" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="cbc:FamilyName" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="cbc:GivenName" minOccurs="0" maxOccurs="unbounded"/>
-			<xsd:element ref=":PatronymicName" minOccurs="0" maxOccurs="unbounded"/>
-			<xsd:element ref=":AlternativeName" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="cbc:PatronymicName" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="cbc:AlternativeName" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="cbc:Gender" minOccurs="0" maxOccurs="unbounded"/>
-			<xsd:element ref=":BirthName" minOccurs="0" maxOccurs="unbounded"/>
-			<xsd:element ref=":DateOfBirth" minOccurs="0" maxOccurs="unbounded"/>
-			<xsd:element ref=":DateOfDeath" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="cbc:BirthName" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="cbc:DateOfBirth" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="cbc:DateOfDeath" minOccurs="0" maxOccurs="unbounded"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	

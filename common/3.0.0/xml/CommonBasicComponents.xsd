@@ -44,9 +44,23 @@
    <xsd:element name="GivenName" type="NameType"/>
    <xsd:element name="BirthName" type="NameType"/>
    <xsd:element name="Gender" type="GenderType"/>
+   <xsd:element name="PatronymicName" type="NameType"/>
+   <xsd:element name="AlternativeName" type="NameType"/>
+   <xsd:element name="DateOfBirth" type="DateOfBirthType"/>
+   <xsd:element name="DateOfDeath" type="DateOfDeathType"/>
    
    <!-- ===== Entity Type Definitions ===== -->
    
+   <xsd:complexType name="DateOfDeathType">
+      <xsd:simpleContent>
+         <xsd:extension base="dt:DateTimeType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="DateOfBirthType">
+      <xsd:simpleContent>
+         <xsd:extension base="dt:DateTimeType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
    <xsd:complexType name="GenderType">
       <xsd:simpleContent>
          <xsd:extension base="dt:CodeType"/>
