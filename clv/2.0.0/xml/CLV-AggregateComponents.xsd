@@ -4,15 +4,19 @@
     xmlns:cac="https://github.com/everis-semic/common/2.0.0/xml/CommonAggregateComponents#"
     xmlns:cbc="https://github.com/everis-semic/common/2.0.0/xml/CommonBasicComponents#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:locn="http://www.w3.org/ns/locn#"
     
     targetNamespace="https://github.com/everis-semic/clv/2.0.0/xml/CLV-AggregateComponents#" 
     elementFormDefault="qualified" 
     attributeFormDefault="unqualified" version="2.0.0">
     <xsd:import namespace="https://github.com/everis-semic/common/2.0.0/xml/CommonAggregateComponents#" schemaLocation="../../../common/2.0.0/xml/CommonAggregateComponents.xsd"/>
     <xsd:import namespace="https://github.com/everis-semic/common/2.0.0/xml/CommonBasicComponents#" schemaLocation="../../../common/2.0.0/xml/CommonBasicComponents.xsd"/>
-       
+    <!-- <xsd:import namespace="http://www.w3.org/ns/locn#" schemaLocation=""/>   -->
+     
     <!-- Element declaration -->
     <xsd:element name="Location" type="LocationType"/>
+    <xsd:element name="Address" type="locn:Address"/>
+    <xsd:element name="Geometry" type="locn:Geometry"/>
     
     <!-- Element definition -->
     <xsd:complexType name="LocationType">
