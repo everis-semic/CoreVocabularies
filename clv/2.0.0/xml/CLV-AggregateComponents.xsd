@@ -4,25 +4,40 @@
     xmlns:cac="https://github.com/everis-semic/common/2.0.0/xml/CommonAggregateComponents#"
     xmlns:cbc="https://github.com/everis-semic/common/2.0.0/xml/CommonBasicComponents#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    xmlns:locn="http://www.w3.org/ns/locn#"
+    xmlns:clv="https://github.com/everis-semic/clv/2.0.0/xml/Core_Location_Vocabulary#"
     
     targetNamespace="https://github.com/everis-semic/clv/2.0.0/xml/CLV-AggregateComponents#" 
     elementFormDefault="qualified" 
     attributeFormDefault="unqualified" version="2.0.0">
     <xsd:import namespace="https://github.com/everis-semic/common/2.0.0/xml/CommonAggregateComponents#" schemaLocation="../../../common/2.0.0/xml/CommonAggregateComponents.xsd"/>
     <xsd:import namespace="https://github.com/everis-semic/common/2.0.0/xml/CommonBasicComponents#" schemaLocation="../../../common/2.0.0/xml/CommonBasicComponents.xsd"/>
-    <!-- <xsd:import namespace="http://www.w3.org/ns/locn#" schemaLocation=""/>   -->
-     
+         
     <!-- Element declaration -->
-    <xsd:element name="Location" type="LocationType"/>
-    <xsd:element name="Address" type="locn:Address"/>
-    <xsd:element name="Geometry" type="locn:Geometry"/>
+    <xsd:element name="Address" type="AddressType"/>
+    <xsd:element name="Geometry" type="GeometryType"/>
+   <!-- <xsd:element name="RegisteredAddress" type="AddressType"/>  -->
     
     <!-- Element definition -->
-    <xsd:complexType name="LocationType">
+    <xsd:complexType name="AddressType">
         <xsd:sequence>
-            <xsd:element ref="cbc:GeographicName" minOccurs="0" maxOccurs="unbounded"/>
-            <xsd:element ref="cbc:GeographicIdentifier" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="cbc:FullAddress" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="cbc:PoBox" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="cbc:Throughfare" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="cbc:LocatorDesignator" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="cbc:LocatorName" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="cbc:AddressArea" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="cbc:PostName" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="cbc:AdminUnitL1" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="cbc:AdminUnitL2" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="cbc:PostCode" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="cbc:AddressID" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="GeometryType">
+        <xsd:sequence>
+            <xsd:element ref="cbc:Wkt" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="cbc:Lat" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="cbc:Long" minOccurs="0" maxOccurs="unbounded"/>
         </xsd:sequence>
     </xsd:complexType>
     
