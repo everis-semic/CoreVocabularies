@@ -50,23 +50,86 @@
    <xsd:element name="DateOfDeath" type="DateOfDeathType"/>
    <xsd:element name="GeographicName" type="NameType"/>
    <xsd:element name="GeographicIdentifier" type="URIType"/>
-   <xsd:element name="PoBox" type="PoBoxType"/>
-   <xsd:element name="FullAddress" type="FullAddressType"/>
-   <xsd:element name="Throughfare" type="ThroughfareType"/>
-   <xsd:element name="LocatorDesignator" type="LocatorDesignatorType"/>
-   <xsd:element name="LocatorName" type="NameType"/>
-   <xsd:element name="AddressArea" type="AddressAreaType"/>
-   <xsd:element name="PostName" type="NameType"/>
-   <xsd:element name="AdminUnitL1" type="AdminUnitType"/>
-   <xsd:element name="AdminUnitL2" type="AdminUnitType"/>
-   <xsd:element name="PostCode" type="PostCodeType"/>
-   <xsd:element name="AddressID" type="AddressIDType"/>
+   <xsd:element name="Address" type="AddressType"/>
+   <xsd:element name="AdditionalStreetName" type="NameType"/>
+   <xsd:element name="BlockName" type="NameType"/>
+   <xsd:element name="BuildingName" type="NameType"/>
+   <xsd:element name="BuildingNumber" type="BuildingNumberType"/>
+   <xsd:element name="CityName" type="NameType"/>
+   <xsd:element name="CitySubdivisionName" type="NameType"/>
+   <xsd:element name="CountryCode" type="CountryCodeType"/>
+   <xsd:element name="CountrySubentity" type="CountrySubentityType"/>
+   <xsd:element name="CountrySubentityCode" type="CountrySubentityCodeType"/>
+   <xsd:element name="Department" type="DepartmentType"/>
    <xsd:element name="Wkt" type="WktType"/>
    <xsd:element name="Lat" type="LatType"/>
    <xsd:element name="Long" type="LongType"/>
+   <xsd:element name="District" type="DistrictType"/>
+   <xsd:element name="Floor" type="FloorType"/>
+   <xsd:element name="PostalAddressIdRef" type="IDRefType"/>
+   <xsd:element name="InhouseMail" type="InhouseMailType"/>
+   <xsd:element name="MarkAttention" type="MarkAttentionType"/>
+   <xsd:element name="MarkCare" type="MarkCareType"/>
+   <xsd:element name="PlotIdentification" type="PlotIdentificationType"/>
+   <xsd:element name="PostalZone" type="PostalZoneType"/>
+   <xsd:element name="PostBox" type="PostBoxType"/>
+   <xsd:element name="Region" type="RegionType"/>
+   <xsd:element name="Room" type="DepartmentType"/>
+   <xsd:element name="StreetName" type="NameType"/>
+   <xsd:element name="TimezoneOffset" type="TimezoneOffsetType"/>
    
    <!-- ===== Entity Type Definitions ===== -->
    
+   <xsd:complexType name="TimezoneOffsetType">
+      <xsd:simpleContent>
+         <xsd:extension base="dt:TextType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="RoomType">
+      <xsd:simpleContent>
+         <xsd:extension base="dt:TextType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="RegionType">
+      <xsd:simpleContent>
+         <xsd:extension base="dt:TextType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="PostBoxType">
+      <xsd:simpleContent>
+         <xsd:extension base="dt:TextType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="PostalZoneType">
+      <xsd:simpleContent>
+         <xsd:extension base="dt:TextType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="PlotIdentificationType">
+      <xsd:simpleContent>
+         <xsd:extension base="dt:TextType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="MarkCareType">
+      <xsd:simpleContent>
+         <xsd:extension base="dt:TextType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="MarkAttentionType">
+      <xsd:simpleContent>
+         <xsd:extension base="dt:TextType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="InhouseMailType">
+      <xsd:simpleContent>
+         <xsd:extension base="dt:TextType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="FloorType">
+      <xsd:simpleContent>
+         <xsd:extension base="dt:TextType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
    <xsd:complexType name="LongType">
       <xsd:simpleContent>
          <xsd:extension base="dt:TextType"/>
@@ -82,44 +145,39 @@
          <xsd:extension base="dt:TextType"/>
       </xsd:simpleContent>
    </xsd:complexType>
-   <xsd:complexType name="AddressIDType">
+   <xsd:complexType name="DistrictType">
       <xsd:simpleContent>
          <xsd:extension base="dt:TextType"/>
       </xsd:simpleContent>
    </xsd:complexType>
-   <xsd:complexType name="PostCodeType">
+   <xsd:complexType name="DepartmentType">
       <xsd:simpleContent>
          <xsd:extension base="dt:TextType"/>
       </xsd:simpleContent>
    </xsd:complexType>
-   <xsd:complexType name="AdminUnitType">
+   <xsd:complexType name="CountrySubentityCodeType">
+      <xsd:simpleContent>
+         <xsd:extension base="dt:CodeType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="CountrySubentityType">
       <xsd:simpleContent>
          <xsd:extension base="dt:TextType"/>
       </xsd:simpleContent>
    </xsd:complexType>
-   <xsd:complexType name="AddressAreaType">
+   <xsd:complexType name="CountryCodeType">
+      <xsd:simpleContent>
+         <xsd:extension base="dt:CodeType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="BuildingNumberType">
       <xsd:simpleContent>
          <xsd:extension base="dt:TextType"/>
       </xsd:simpleContent>
    </xsd:complexType>
-   <xsd:complexType name="LocatorDesignatorType">
+   <xsd:complexType name="AddressType">
       <xsd:simpleContent>
-         <xsd:extension base="dt:TextType"/>
-      </xsd:simpleContent>
-   </xsd:complexType>
-   <xsd:complexType name="ThroughfareType">
-      <xsd:simpleContent>
-         <xsd:extension base="dt:TextType"/>
-      </xsd:simpleContent>
-   </xsd:complexType>
-   <xsd:complexType name="FullAddressType">
-      <xsd:simpleContent>
-         <xsd:extension base="dt:TextType"/>
-      </xsd:simpleContent>
-   </xsd:complexType>
-   <xsd:complexType name="PoBoxType">
-      <xsd:simpleContent>
-         <xsd:extension base="dt:TextType"/>
+         <xsd:extension base="dt:CodeType"/>
       </xsd:simpleContent>
    </xsd:complexType>
    <xsd:complexType name="GeographicIdentifier">
